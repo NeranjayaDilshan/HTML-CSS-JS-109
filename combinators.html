@@ -27,14 +27,25 @@
         } */
 
         /* general sibling selector (~)  */
-        div~p {
+        /* div~p {
             color: red;
+        } */
+         
+        p::first-letter {
+            color: red;
+            font-size: 40px;
+        }
+
+        p::first-line {
+            color: green;
         }
     </style>
 </head>
 
 <body>
-
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam libero delectus reiciendis cumque enim,
+        dignissimos quasi rerum temporibus fugit? Dicta exercitationem aliquam sed. Sint possimus ipsum iste libero,
+        nulla similique.</p>
     <div>
         <p>1st p tag</p>
         <p>2nd p tag</p>
