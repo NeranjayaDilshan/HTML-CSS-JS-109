@@ -7,10 +7,6 @@
     <title>CSS Combinators</title>
 
     <style>
-        div {
-            border: 1px solid red;
-        }
-
         /* descendant selector (space)  */
         /* div p{
             color: red;
@@ -30,7 +26,7 @@
         /* div~p {
             color: red;
         } */
-         
+
         p::first-letter {
             color: red;
             font-size: 40px;
@@ -39,14 +35,28 @@
         p::first-line {
             color: green;
         }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        div:hover {
+            background-color: red;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
+    <div>
+
+    </div>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam libero delectus reiciendis cumque enim,
         dignissimos quasi rerum temporibus fugit? Dicta exercitationem aliquam sed. Sint possimus ipsum iste libero,
         nulla similique.</p>
-    <div>
+    <!-- <div>
         <p>1st p tag</p>
         <p>2nd p tag</p>
         <section>
@@ -54,7 +64,7 @@
         </section>
         <p>p tag ouside section</p>
         <section>content inside section</section>
-    </div>
+    </div> -->
     <p>p tag outside div element</p>
     <p>2nd p tag outside div element</p>
 
