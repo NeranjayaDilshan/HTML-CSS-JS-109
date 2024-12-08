@@ -28,11 +28,22 @@
             cursor: pointer;
             color: red;
         }
-        .home-image{
+
+        .home-image {
             background-image: url(assets/background.jpg);
             height: 600px;
             background-size: cover;
             background-position: center;
+            position: relative;
+        }
+
+        .home-text {
+            background-color: aquamarine;
+            width: 40%;
+            padding: 30px 40px;
+            position: absolute;
+            top: 70px;
+            right: 70px;
         }
     </style>
 
@@ -54,6 +65,13 @@
 
     <div class="body">
         <div class="home-image">
+            <div class="home-text">
+                <h1>Weclome to IJSE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste repudiandae voluptate quidem
+                    numquam unde molestias? Accusamus, vero quisquam! Repellat omnis quasi numquam maiores nobis nulla
+                    officia ipsum ab cupiditate.</p>
+                <a href="https://www.ijse.lk/" target="_blank">Visit IJSE !!!</a>
+            </div>
         </div>
         <div class="home-content"></div>
     </div>
