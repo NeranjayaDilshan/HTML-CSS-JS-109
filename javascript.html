@@ -32,14 +32,28 @@
         console.log("x after assign : ", x);
         y = 1000;
         console.log("y after assign : ", y);
-        z = false;
-        console.log("z after assign : ", z);
+        // z = false; //Error (Assignment to constant variable)
+        // console.log("z after assign : ", z);
 
         var a;
         let b;
         // const c; //'const' declarations must be initialized
         a = 100;
         b = true;
+
+        let maths = 75;
+        let sinhala = 80;
+        console.log("Maths : ", maths);
+        console.log("Sinhala : ", sinhala);
+
+        let total = maths + sinhala
+        console.log("Total  : ", total);
+
+        let avg = total / 2;
+        console.log("Avg : ", avg);
+
+
+
 
     </script>
 
