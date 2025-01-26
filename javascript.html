@@ -72,15 +72,24 @@
         console.log(maths > sinhala);//false
         console.log(maths < sinhala);//true
 
-        let and_op= (maths>sinhala) && (maths<sinhala);
-        console.log("and_op : ",and_op);//false
+        let and_op = (maths > sinhala) && (maths < sinhala);
+        console.log("and_op : ", and_op);//false
 
-        let or_op= (maths>sinhala) || (maths<sinhala);
-        console.log("or_op : ",or_op); //true
+        let or_op = (maths > sinhala) || (maths < sinhala);
+        console.log("or_op : ", or_op); //true
 
-        console.log("not_op : ",!or_op);//false
-        
-        
+        console.log("not_op : ", !or_op);//false
+
+        if (maths > sinhala) {
+            console.log("maths is greater than sinhala");
+        } else {
+            console.log("maths is less than sinhala");
+        }
+
+        (maths < sinhala) ? console.log("Maths is less than sinhala") : console.log("maths is greater than sinhala");
+
+
+
 
 
 
