@@ -182,15 +182,30 @@
         // }
     </script>
 
-    <script>    
+    <script>
         function login_method(event) {
             event.preventDefault();
             let username = $('#username').val()
             console.log("username Jq : ", username);
-            
+
         }
     </script>
 
+    <script>
+        //get Request
+        $.ajax({
+            method: 'GET',
+            url: 'https://jsonplaceholder.typicode.com/posts',
+            success: function (success) {
+                console.log(success);
+
+            },
+            error: function error(err) {
+                console.log(err);
+
+            }
+        })
+    </script>
 
 </body>
 
