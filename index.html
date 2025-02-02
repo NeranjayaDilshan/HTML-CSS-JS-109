@@ -107,7 +107,7 @@
 
 
 
-    <form>
+    <form onsubmit="login_method(event)">
         <h1>Login</h1>
 
         <div style="margin-bottom: 10px;">
@@ -121,7 +121,7 @@
         </div>
 
         <div>
-            <input type="submit" value="Login">
+           <button type="submit">Login</button>
         </div>
 
     </form>
@@ -165,6 +165,19 @@
         cupiditate officia cumque natus est dignissimos eligendi recusandae ipsam sunt explicabo eos perferendis error
         necessitatibus reprehenderit.
     </div>
+
+
+    <script>
+        function login_method(event){
+            event.preventDefault();
+            console.log("calling login_method");
+            let username=document.getElementById('username').value
+            console.log("username : ",username);
+            let password=document.getElementById('password_1').value
+            console.log("password : ",password);
+            
+        }
+    </script>
 </body>
 
 </html>
