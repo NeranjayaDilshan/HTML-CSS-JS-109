@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <style>
-         
+
     </style>
 </head>
 
@@ -114,14 +114,14 @@
             <label for="username">Username</label>
             <input type="text" id="username">
         </div>
- 
+
         <div style="margin-bottom: 10px;">
             <label for="password_1">Password</label>
             <input type="password" id="password_1">
         </div>
 
         <div>
-           <button type="submit">Login</button>
+            <button type="submit">Login</button>
         </div>
 
     </form>
@@ -168,16 +168,22 @@
 
 
     <script>
-        function login_method(event){
+        function login_method(event) {
             event.preventDefault();
             console.log("calling login_method");
-            let username=document.getElementById('username').value
-            console.log("username : ",username);
-            let password=document.getElementById('password_1').value
-            console.log("password : ",password);
-            
+            let username = document.getElementById('username').value
+            console.log("username : ", username);
+            let password = document.getElementById('password_1').value
+            console.log("password : ", password);
+
         }
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $('')
+    </script>
+
 </body>
 
 </html>
