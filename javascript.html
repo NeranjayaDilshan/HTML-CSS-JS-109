@@ -136,6 +136,35 @@
 
         console.log("car : ", car);//{type: 'BMW', color: 'RED', Year: '2015'}
         console.log(car.color);//RED
+
+
+        const obj_array = [
+            {
+                "type": "BMW",
+                "color": "RED",
+                "Year": '2015'
+            },
+            {
+                "type": "AUDI",
+                "color": "BLACK",
+                "Year": '2020'
+            },
+            {
+                "type": "BENZ",
+                "color": "WHITE",
+                "Year": '2010'
+            }
+        ]
+
+        console.log(obj_array);
+        console.log(obj_array.at(2));
+        for(let i=0;i<obj_array.length ;i++){
+            console.log(obj_array[i]);
+            console.log(obj_array[i].type);
+            console.log(obj_array[i].color);
+            
+        }
+        
         
 
 
