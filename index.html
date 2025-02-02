@@ -11,6 +11,9 @@
     <style>
 
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -168,21 +171,26 @@
 
 
     <script>
+        // function login_method(event) {
+        //     event.preventDefault();
+        //     console.log("calling login_method");
+        //     let username = document.getElementById('username').value
+        //     console.log("username : ", username);
+        //     let password = document.getElementById('password_1').value
+        //     console.log("password : ", password);
+
+        // }
+    </script>
+
+    <script>    
         function login_method(event) {
             event.preventDefault();
-            console.log("calling login_method");
-            let username = document.getElementById('username').value
-            console.log("username : ", username);
-            let password = document.getElementById('password_1').value
-            console.log("password : ", password);
-
+            let username = $('#username').val()
+            console.log("username Jq : ", username);
+            
         }
     </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $('')
-    </script>
 
 </body>
 
