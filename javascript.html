@@ -158,14 +158,24 @@
 
         console.log(obj_array);
         console.log(obj_array.at(2));
-        for(let i=0;i<obj_array.length ;i++){
+        for (let i = 0; i < obj_array.length; i++) {
             console.log(obj_array[i]);
             console.log(obj_array[i].type);
             console.log(obj_array[i].color);
-            
+
         }
-        
-        
+
+        // ===========For in Loop==============
+
+        console.log("===========For in Loop==============");
+        for(const car in obj_array){
+            console.log(car);
+            console.log(obj_array[car]);  
+        }
+
+
+
+
 
 
 
