@@ -168,19 +168,29 @@
         // ===========For in Loop==============
 
         console.log("===========For in Loop==============");
-        for(const car in obj_array){
+        for (const car in obj_array) {
             console.log(car);
-            console.log(obj_array[car]);  
+            console.log(obj_array[car]);
         }
 
         console.log("=============for of Loop ===============");
-        
-        for(const car of obj_array){
+
+        for (const car of obj_array) {
             console.log(car);
             console.log(car.color);
             console.log(car.type);
-            
+
         }
+
+        function sum(sinhala, maths) {
+            // let total = maths + sinhala;
+            // return total;
+            return sinhala + maths;
+        }
+
+        let subj_total = sum(80, 70);
+        console.log("subj_total : ",subj_total);
+
 
 
 
