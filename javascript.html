@@ -5,16 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+    </style>
 </head>
 
 <body>
-    <h1></h1>
-    <p></p>
+    <div class="box" id="simple_id">
+
+    </div>
+<!-- 
+    <div class="box">
+
+    </div> -->
 
 
     <script src="main.js"></script> <!-- external JS -->
 
-    <script>
+    <!-- <script>
         //outputs 
         console.log("Hello JS... This is Console");
         // window.alert("Hello JS... This is Alert");
@@ -196,19 +208,28 @@
             return sinhala + maths;
         }
 
-        console.log("tot(50,70) : ",tot(50,100));
+        console.log("tot(50,70) : ", tot(50, 100));
+
+
+
+
+
+
+
+
+
+
+
+
+    </script> -->
+
+    <script>
+        let element = document.getElementById('simple_id');
+        console.log("element : ", element);
+
+        // let elements = document.getElementsByClassName('box');
+        // console.log("elements : ",elements);
         
-
-
-
-
-
-
-
-
-
-
-
     </script>
 
 </body>
